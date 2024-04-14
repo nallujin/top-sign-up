@@ -7,8 +7,42 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-
+<form action="after.html" method="GET">
+  <div class="user-name">
+    <div>
+      <label for="first-name">FIRST NAME</label>
+      <input type="text" id="first-name" pattern="{20}" required />
+    </div>
+    <div>
+      <label for="last-name">LAST NAME</label>
+      <input type="text" id="last-name" pattern="{20}" required />
+    </div>
+  </div>
+  <div class="email-phone">
+    <div>
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" required />
+    </div>
+    <div>
+      <label for="phone">PHONE NUMBER</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{4-12}" required />
+    </div>
+  </div>
+  <div class="passwords">
+    <div>
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" required />
+    </div>
+    <div>
+      <label for="re-pass">CONFIRM PASSWORD</label>
+      <input type="password" id="re-pass" required />
+    </div>
+  </div>
+  <button type="submit" id="submit">CREATE ACCOUNT</button>
+  <p>Already have an account? <a href="#">Log in</a></p>
+</form>
 </body>
 </html>
